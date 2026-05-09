@@ -1,0 +1,148 @@
+:root {
+    --green: #6aaa2a;
+    --navy: #13293d;
+}
+
+
+.navbar {
+    background: var(--navy) !important;
+    padding: 0 !important;
+}
+
+.nav-link {
+    color: var(--green) !important;
+    padding: 16px 20px !important;
+    font-size: .9rem;
+}
+
+.nav-link.active {
+    background: var(--green) !important;
+    color: #fff !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,.8)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.card-hd {
+    position: relative;
+    min-height: 150px;
+    padding: 15px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-hd.dark {
+    background: var(--navy);
+}
+
+.card-hd.light {
+    background: #e8e8e8;
+}
+
+.card-hd .num {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    opacity: .4;
+    text-align: right;
+}
+
+.card-hd.dark .num {
+    color: #fff;
+}
+
+.card-hd.light .num {
+    color: #aaa;
+}
+
+.card-hd h5 {
+    color: var(--green);
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.cta-wrap {
+    position: relative;
+    height: 210px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-wrap img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cta-wrap span {
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #222;
+}
+
+
+.main-footer {
+    background: var(--navy);
+}
+
+.footer-list li {
+    border-bottom: 1px solid #1f3347;
+    padding: 8px 0;
+}
+
+
+.back-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .9);
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    color: #555;
+    text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+    .card-hd {
+        min-height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 16px;
+    }
+
+    .card-hd .num {
+        font-size: 2.2rem;
+        opacity: .35;
+    }
+
+    .card-hd h5 {
+        font-size: .95rem;
+        margin: 0;
+    }
+
+    .cta-wrap {
+        height: 160px;
+    }
+
+    .cta-wrap span {
+        font-size: 1.5rem;
+    }
+}
